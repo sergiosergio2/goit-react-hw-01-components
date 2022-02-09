@@ -3,8 +3,8 @@ import s from './Profile.module.css';
 
 
 
-export default function Profile(props) {
-const { name, tag, location, avatar, stats } = props;
+export default function Profile({ name, tag, location, avatar, stats }) {
+
 const { followers, views, likes } = stats;
 return (
 <div className={s.profile}>
@@ -14,6 +14,7 @@ return (
       alt="User avatar"
       className={s.avatar}
     />
+    <p className={s.name}>{name}</p>
     <p className={s.name}>{name}</p>
     <p className={s.tag}>@{tag}</p>
     <p className={s.location}>{location}</p>
