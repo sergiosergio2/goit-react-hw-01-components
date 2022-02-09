@@ -4,7 +4,7 @@ import s from './FriendListItem.module.css';
 export default function FriendListItem({ id, avatar, name, isOnline })  {
   
   const online = isOnline ?  s.statusActive : s.status;
-  console.log(FriendListItem);
+  // console.log(FriendListItem);
   return (
     <li className={s.item} key={id}>
       <span className={online}>{isOnline}</span>
