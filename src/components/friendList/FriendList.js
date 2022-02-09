@@ -9,7 +9,7 @@ function FriendList ({friends}) {
             key={friend.id}
             avatar={friend.avatar}
             name={friend.name}
-            isOnLine={friend.isOnLine}
+            isOnline={friend.isOnline}
             />
             ))}
             

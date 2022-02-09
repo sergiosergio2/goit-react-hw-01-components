@@ -13,7 +13,12 @@ export default function App ()  {
     <div className="container">
       <div>
         <h3>Profile</h3>
-        <Profile name={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats} />
+        <Profile 
+          name={user.username} 
+          tag={user.tag} 
+          location={user.location} 
+          avatar={user.avatar} 
+          stats={user.stats}/>
 
       </div>
       <div>
